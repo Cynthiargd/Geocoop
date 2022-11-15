@@ -5,57 +5,111 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.css" integrity="sha512-NGRhMiWY9pf5z8PLens7/u+LLwIPAu1dhJ7u9sHRWIo8TKrVbKiWlRdYRH3pVDCZA10zmobo+PBLGeLOREklBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="Assets/style.css">
+
+  <script src="cooperatives.json" defer></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+     integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+     crossorigin=""/>
+
+     <link
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+     rel="stylesheet"
+   />
+
   
-  <title>Document</title>
+  <title>Geocoop</title>
 </head>
 
 
 <body>
+  
 
   <div id="fullpage">
 
     <div class="section s1">
 
       <div class="slide">
-        
+
         <header>
-          
+
           <ul class="menu">
           <li data-menuanchor="section1" class="active"><a href="#section1">Accueil</a></li>
           <li data-menuanchor="section2"><a href="#section2">Géolocalisation</a></li>
           <li data-menuanchor="section3"><a href="#section3">Contact</a></li>
+          
       </ul>
     
     </header>
 
         <h1>Geocoop</h1>
-
+       
       </div>
+      
       <div class="slide">
-        <h1>Qui sommes nous ?</h1>
+        <h5>Qui sommes nous ?</h5>
         <p>GEOCOOP a pour but de créer un lien entre producteur, coopérative et consommateur. Dans une société où l’accès à de la production française et locale devient couteuse et difficile, nous avons mis en place Geocoop afin de geolocaliser les coopératives proches de vous.
           </p>
       </div>
 
+      
     </div>
 
     <div class="section s2">
       <h2>Geolocalise toi</h2>
+      <div id="maCarte"></div>
     </div>
 
 
-
     <div class="section s3">
-      <h3>Contact</h3>
-      <p> Vous êtes producteur et vous souhaitez être enregistrer, contactez-nous</p>
 
+      <form action="https://submit-form.com/<form-id>" method="post">
+
+
+        <h3>Contactez-nous</h3>
+
+        <div class="separation"></div>
+        <div class="corps-formulaire">
+          <div class="gauche">
+            <div class="groupe">
+              <label>Votre Prénom</label>
+              <input type="text" autocomplete="off" />
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="groupe">
+              <label>Votre adresse e-mail</label>
+              <input type="text" autocomplete="off" />
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="groupe">
+              <label>Votre téléphone</label>
+              <input type="text" autocomplete="off" />
+              <i class="fas fa-mobile"></i>
+            </div>
+          </div>
+  
+          <div class="droite">
+            <div class="groupe">
+              <label>Message</label>
+              <textarea placeholder="Saisissez ici..."></textarea>
+            </div>
+          </div>
+        </div>
+  
+        <div class="pied-formulaire" align="center">
+          <button>Envoyer le message</button>
+        </div>
+
+      </form>
     </div>
 
   </div>
 
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.js" integrity="sha512-ojnoeSkK5NDwnuW5S0ZnddobHez8Bx1yVa3RE+Cd0fGEuY/NEd4sgVF/CJ6eDtnOeLZLbTJpNFrCkUYbHS2hRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  
 
 <script>
   new fullpage ('#fullpage', {
@@ -68,12 +122,16 @@
     controlArrows: false,
     slideNavigation: true,
     
-
-
-  })
-
-
+  }) 
 </script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+crossorigin=""></script>
+
+
+<script src="script.js" defer ></script>
 
 </body>
 </html>
