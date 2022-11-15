@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.css" integrity="sha512-NGRhMiWY9pf5z8PLens7/u+LLwIPAu1dhJ7u9sHRWIo8TKrVbKiWlRdYRH3pVDCZA10zmobo+PBLGeLOREklBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="Assets/style.css">
+  
+  <title>Document</title>
+</head>
+
+
+<body>
+
+  <div id="fullpage">
+
+    <div class="section s1">
+
+      <div class="slide">
+        
+        <header>
+          
+          <ul class="menu">
+          <li data-menuanchor="section1" class="active"><a href="#section1">Accueil</a></li>
+          <li data-menuanchor="section2"><a href="#section2">Géolocalisation</a></li>
+          <li data-menuanchor="section3"><a href="#section3">Contact</a></li>
+      </ul>
+    
+    </header>
+
+        <h1>Geocoop</h1>
+
+      </div>
+      <div class="slide">
+        <h1>Qui sommes nous ?</h1>
+        <p>GEOCOOP a pour but de créer un lien entre producteur, coopérative et consommateur. Dans une société où l’accès à de la production française et locale devient couteuse et difficile, nous avons mis en place Geocoop afin de geolocaliser les coopératives proches de vous.
+          </p>
+      </div>
+
+    </div>
+
+    <div class="section s2">
+      <h2>Geolocalise toi</h2>
+    </div>
+
+
+
+    <div class="section s3">
+      <h3>Contact</h3>
+      <p> Vous êtes producteur et vous souhaitez être enregistrer, contactez-nous</p>
+
+    </div>
+
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.js" integrity="sha512-ojnoeSkK5NDwnuW5S0ZnddobHez8Bx1yVa3RE+Cd0fGEuY/NEd4sgVF/CJ6eDtnOeLZLbTJpNFrCkUYbHS2hRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+  new fullpage ('#fullpage', {
+    autoScrolling: true,
+    navigation: true,
+    anchors: ['section1', 'section2', 'section3'],
+    navigationTooltips: ['Accueil', 'Géolocalisation', 'Contact'],
+    showActiveTooltip: true,
+    scrollingSpeed: 1500,
+    controlArrows: false,
+    slideNavigation: true,
+    
+
+
+  })
+
+
+</script>
+
+</body>
+</html>

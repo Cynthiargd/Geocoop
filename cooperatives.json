@@ -1,0 +1,38 @@
+[
+	{
+		"id": 7,
+		"Nom": "Agri Fallen Sarl",
+		"coordonees_gps": "43.299986666893794, 5.591572224530575",
+		"contact": "Chem. de l'Avelanède, 13400 Aubagne"
+	},
+	{
+		"id": 4,
+		"Nom": "Coopcinnelle",
+		"coordonees_gps": "43.3097922033411, 5.420272370555539",
+		"contact": "18 Trav. Marcel Maridet, 13012 Marseille"
+	},
+	{
+		"id": 6,
+		"Nom": "Cooperative du Garlaban",
+		"coordonees_gps": " 43.296143917559434, 5.584002997542764",
+		"contact": "539 Chem. de Ceinture, 13400 Aubagne"
+	},
+	{
+		"id": 3,
+		"Nom": "Nourriture Vivante",
+		"coordonees_gps": "43.28129277087712, 5.369384911642294",
+		"contact": "245A Chem. du Roucas Blanc, 13007 Marseille"
+	},
+	{
+		"id": 5,
+		"Nom": "Satoriz",
+		"coordonees_gps": "43.303691812074945, 5.6019771673781555",
+		"contact": "Quartier des Jonquiers CD2, 2136 Rte de Gemenos, 13400 Aubagne"
+	},
+	{
+		"id": 2,
+		"Nom": "Super Cafoutch",
+		"coordonees_gps": "43.29856947107968, 5.371639839872048",
+		"contact": "16 Rue du Chevalier Roze, 13002 Marseille"
+	}
+]
